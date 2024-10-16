@@ -37,7 +37,7 @@ def sf_get_user_info(access_token: str) -> dict:
     print(response.text)
     return response.json()
 
-@app.post('/authcon')
+@app.route('/authcon',methods=['POST'])
 def auth_conn():
     print("Authenticating connection")
     print(request.json)
