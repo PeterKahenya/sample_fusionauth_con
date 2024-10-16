@@ -50,8 +50,8 @@ def auth_conn():
             "user": {
                     "id": str(uuid.uuid4()),
                     "email": sf_user_info["email"],
-                    "firstName": sf_user_info["first_name"],
-                    "lastName": sf_user_info["last_name"],
+                    "firstName": sf_user_info["given_name"],
+                    "lastName": sf_user_info["family_name"],
                     "username": sf_user_info["preferred_username"]
                 }
     }
